@@ -1,9 +1,19 @@
 // Reverse the provided string.
-function reverseString(str) {
-  var string = str.split('');
-  string = string.reverse();
-  string = string.join('');
 
+// 1. solution with array methods
+
+// function reverseString(str) {
+//   var string = str.split('').reverse().join('');
+//   return string;
+// }
+// reverseString("hello");
+
+// 2. solution with string index
+function reverseString(str) {
+  var string = '';
+  for (var i = str.length-1; i>=0; i--) {
+    string += str[i];
+  }
   return string;
 }
-reverseString("hello");
+reverseString("hello")

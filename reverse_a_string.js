@@ -19,7 +19,7 @@
 // }
 // reverseString("hello")
 
-// 3. solution with charAt()
+  // 3. solution with charAt()
 
 function reverseString(str) {
   var string = '';
